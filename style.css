@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body {
+    background-color: #000;
+}
+body,
+html {
+    height: 200%;
+}
+
+/* HEADER
+
+*/
+header{height: 5vh;}
+nav>ul {
+    display: flex;
+    list-style-type: none;
+
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main-nav-item {
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+.main-nav-item>a {
+    text-decoration: none;
+    color: rosybrown;  
+    /* color: darkslateblue;   */
+    position: relative;
+    
+    animation: move 2.5s 1;
+}
+@keyframes move {
+    from, 
+    to {
+    top: 0;
+    left: 0;
+    }
+    40% {top: -100%;}
+    50% {top: 5%;}
+    60% {top: 10%; }
+    70% {top: 15%;}
+    80% {top: 20%;}
+    100% {top: 0;}
+}
+
+
+
+/* MAIN */
+main {
+    height: 140%;
+    width: 100wh;
+}
+/*появление текста по середине*/
+.container{
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.container2{
+    position: absolute;
+    text-align: center;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+}
+.container span{
+    display: block;
+}
+.text1 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 6px;
+    margin-bottom: 25px;
+    background-color: #000;
+
+}
+.text2 {
+    display: block;
+    color:  rosybrown;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    position: relative;
+    animation: text 3s 1;
+}
+@keyframes text {
+    0%{
+        color: #000;
+        margin-bottom: -10px;
+    }
+    30% {
+        letter-spacing: 2vh;
+        margin-bottom: -10px;
+    }
+    60% {
+        letter-spacing: 2vh;
+        margin-bottom: -10px;
+    }
+    90% {
+        letter-spacing: 3px;
+        margin-bottom: 0;
+    }
+
+}
+/* .main-info>div{
+
+    background-color: green;
+} */
+
+
+
+
+
+
+/* FOOTER */
+footer{
+    width: 100%;
+}
+.nav-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    bottom: 0;
+    margin-top: 5vh;
+
+
+}
+
+
+.footer-nav-item {
+    bottom: 0;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: rosybrown;
+    
+}
+

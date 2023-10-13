@@ -53,27 +53,20 @@ nav>ul {
 
 /* MAIN */
 main {
-    height: 140%;
+    height: 100%;
     width: 100wh;
 }
 /*появление текста по середине*/
 .container{
     position: absolute;
     text-align: center;
-    top: 30%;
+    width: 100%;
+    padding-top: 15%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%)
 }
-.container2{
-    position: absolute;
-    text-align: center;
-    top: 110%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 35px;
-    font-weight: 700;
-}
+
 .container span{
     display: block;
 }
@@ -118,6 +111,43 @@ main {
 
     background-color: green;
 } */
+.skills-items {
+    list-style-type: none;
+}
+.about-me, .skills {
+    display: grid;
+    color: #fff;
+    grid-template-columns: 1fr 1fr; /* Две колонки */
+    grid-template-rows: auto auto; /* Два ряда */
+    gap: 10px; /* Расстояние между ячейками */
+}
+
+.skills {
+    top: 101%;
+}
+
+.cell {
+    padding: 10px;
+    border: 1px solid rgba(78, 24, 164, 0.5);
+    border-radius: 10%;
+    
+}
+.cell-top {
+    text-align: center;
+
+    grid-column: 1 / span 2; /* Занимает две колонки */
+  }
+  
+  .cell-bottom-left {
+    text-align: left;
+
+    grid-column: 1; /* Занимает первую колонку */
+  }
+  
+  .cell-bottom-right {
+
+    grid-column: 2; /* Занимает вторую колонку */
+  }
 
 
 
